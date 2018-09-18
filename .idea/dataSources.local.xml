@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="dev/Hibernate" uuid="cdece151-0280-4b0e-995c-ecf4c8c9d774">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    <data-source name="dev/Hibernate" uuid="966ebf7b-e561-48ac-a49c-c56f6d985226">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="HSQLDB" exact-version="0.0" />
       <first-sync>true</first-sync>
       <user-name>sa</user-name>
     </data-source>
-    <data-source name="prod/Hibernate" uuid="77944d39-12a8-4723-960d-90597bf6d068">
+    <data-source name="pgsql/Hibernate" uuid="2d63b9e3-8ab3-41a2-9f24-1536e05bdee4">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <first-sync>true</first-sync>
-      <user-name>sa</user-name>
+      <user-name>postgres</user-name>
     </data-source>
-    <data-source name="pgsql/Hibernate" uuid="8edacd72-5a54-4fa0-a4a9-be7f434b8889">
+    <data-source name="prod/Hibernate" uuid="9dd57bca-64f7-401e-8839-50ddc613bf63">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <first-sync>true</first-sync>
-      <user-name>VinYarD</user-name>
+      <user-name>sa</user-name>
     </data-source>
   </component>
 </project>
