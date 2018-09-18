@@ -1,8 +1,6 @@
 package pro.vinyard.project.entity.peristence;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class CPPhoneNumber {
@@ -10,6 +8,9 @@ public class CPPhoneNumber {
 	@Id
 	@GeneratedValue
 	private long id;
+	
+	@ManyToOne(cascade = CascadeType.PERSIST)
+	private CPEmployee employee;
 	
 	private String phoneNumber;
 	private String phoneType;

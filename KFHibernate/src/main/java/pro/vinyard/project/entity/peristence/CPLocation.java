@@ -1,6 +1,8 @@
 package pro.vinyard.project.entity.peristence;
 
 
+import com.google.maps.model.LatLng;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -16,16 +18,10 @@ public class CPLocation {
 	
 	private double lng;
 	
-	public CPLocation(String latLng) {
-		super();
-		String[] tmp = latLng.split(",");
-		if (tmp.length == 2) {
-			this.setLat(Double.parseDouble(tmp[0]));
-			this.setLng(Double.parseDouble(tmp[1]));
-		}
-		
-		if (tmp.length != 2 || !latLng.equals(this.toString())) {
-			System.out.println("Wrong LatLng String input");
+	public CPLocation(LatLng latLng) {
+		if(latLng != null) {
+			this.lat = latLng.lat;
+			this.lng = latLng.lng;
 		}
 	}
 	
