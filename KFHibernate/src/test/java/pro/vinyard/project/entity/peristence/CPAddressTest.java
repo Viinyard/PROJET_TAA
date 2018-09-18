@@ -3,19 +3,16 @@ package pro.vinyard.project.entity.peristence;
 import com.google.maps.GeoApiContext;
 import com.google.maps.GeocodingApi;
 import com.google.maps.errors.ApiException;
-import com.google.maps.model.AddressType;
 import com.google.maps.model.GeocodingResult;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import sun.jvm.hotspot.debugger.Address;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -59,10 +56,20 @@ public class CPAddressTest {
 				listAddress.add(new CPAddress(r));
 			}
 		
-			assertEquals(AddressType.ESTABLISHMENT, results[0].types[0]);
-			assertEquals(AddressType.LIBRARY, results[0].types[1]);
-			assertEquals(AddressType.POINT_OF_INTEREST, results[0].types[2]);
-			assertNotNull(Arrays.toString(results));
+			for(CPAddress cpAddress : listAddress) {
+				assertNotNull("Address is null", cpAddress);
+				if(cpAddress != null) {
+					assertNotNull(cpAddress.getCity());
+					assertNotNull(cpAddress.getCountry());
+					assertNotNull(cpAddress.getFormatted_address());
+					assertNotNull(cpAddress.getId());
+					assertNotNull(cpAddress.getLabel());
+					assertNotNull(cpAddress.getLocation());
+					if(cpAddress.getLocation() != null) {
+					
+					}
+				}
+			}
 			
 		} catch (ApiException e) {
 			e.printStackTrace();
