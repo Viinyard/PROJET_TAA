@@ -1,0 +1,70 @@
+package pro.vinyard.project.entity.peristence;
+
+
+import javax.persistence.*;
+
+@Entity
+public class CPCar {
+	
+	@Id
+	@GeneratedValue
+	private long id;
+	
+	private String model;
+	private int fiscalHorsepower;
+	private long registrationDate;
+	
+	@OneToOne(cascade = CascadeType.DETACH)
+	private CPEmployee employee;
+	
+	public CPCar() {}
+	
+	public CPCar(long id, String model, int fiscalHorsepower, long registrationDate, CPEmployee employee) {
+		super();
+		this.id = id;
+		this.model = model;
+		this.fiscalHorsepower = fiscalHorsepower;
+		this.registrationDate = registrationDate;
+		this.employee = employee;
+	}
+	
+	public long getId() {
+		return id;
+	}
+	
+	public void setId(long id) {
+		this.id = id;
+	}
+	
+	public String getModel() {
+		return model;
+	}
+	
+	public void setModel(String model) {
+		this.model = model;
+	}
+	
+	public int getFiscalHorsepower() {
+		return fiscalHorsepower;
+	}
+	
+	public void setFiscalHorsepower(int fiscalHorsepower) {
+		this.fiscalHorsepower = fiscalHorsepower;
+	}
+	
+	public long getRegistrationDate() {
+		return registrationDate;
+	}
+	
+	public void setRegistrationDate(long registrationDate) {
+		this.registrationDate = registrationDate;
+	}
+	
+	public CPEmployee getEmployee() {
+		return employee;
+	}
+	
+	public void setEmployee(CPEmployee idEmployee) {
+		this.employee = idEmployee;
+	}
+}

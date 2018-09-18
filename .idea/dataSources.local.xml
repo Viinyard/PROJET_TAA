@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="dev/Hibernate" uuid="cdece151-0280-4b0e-995c-ecf4c8c9d774">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>sa</user-name>
+    </data-source>
+    <data-source name="prod/Hibernate" uuid="77944d39-12a8-4723-960d-90597bf6d068">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>sa</user-name>
+    </data-source>
+    <data-source name="pgsql/Hibernate" uuid="8edacd72-5a54-4fa0-a4a9-be7f434b8889">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>VinYarD</user-name>
+    </data-source>
+  </component>
+</project>
