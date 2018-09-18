@@ -2,6 +2,7 @@ package pro.vinyard.project.entity.peristence;
 
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 public class CPCar {
@@ -12,14 +13,14 @@ public class CPCar {
 	
 	private String model;
 	private int fiscalHorsepower;
-	private long registrationDate;
+	private Date registrationDate;
 	
 	@OneToOne(cascade = CascadeType.DETACH)
 	private CPEmployee employee;
 	
 	public CPCar() {}
 	
-	public CPCar(long id, String model, int fiscalHorsepower, long registrationDate, CPEmployee employee) {
+	public CPCar(long id, String model, int fiscalHorsepower, Date registrationDate, CPEmployee employee) {
 		super();
 		this.id = id;
 		this.model = model;
@@ -52,11 +53,11 @@ public class CPCar {
 		this.fiscalHorsepower = fiscalHorsepower;
 	}
 	
-	public long getRegistrationDate() {
+	public Date getRegistrationDate() {
 		return registrationDate;
 	}
 	
-	public void setRegistrationDate(long registrationDate) {
+	public void setRegistrationDate(Date registrationDate) {
 		this.registrationDate = registrationDate;
 	}
 	
