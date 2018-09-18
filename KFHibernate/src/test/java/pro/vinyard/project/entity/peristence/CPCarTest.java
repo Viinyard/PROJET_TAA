@@ -61,5 +61,6 @@ public class CPCarTest {
 		
 		assertTrue("Model not equal : " + newCar.getRegistrationDate() + " == " + cpCar.getRegistrationDate(), newCar.getRegistrationDate() == cpCar.getRegistrationDate());
 		
+		assertTrue("id not equal : " + newCar.getId() + " == " + cpCar.getId(), newCar.getId() == cpCar.getId());
 	}
 }

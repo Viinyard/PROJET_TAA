@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="pro.vinyard.project.entity.peristence.CPCarTest" time="3.009" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="pro.vinyard.project.entity.peristence.CPCarTest" time="3.063" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/VinYarD/Documents/ISTIC/M1/S2/IPR/kilofees/KFHibernate/target/surefire/surefirebooter100758012503640258.jar /Users/VinYarD/Documents/ISTIC/M1/S2/IPR/kilofees/KFHibernate/target/surefire 2018-09-18T10-37-06_130-jvmRun1 surefire7132155330347488944tmp surefire_01576089273313314787tmp"/>
+    <property name="sun.java.command" value="/Users/VinYarD/Documents/ISTIC/M1/S2/IPR/kilofees/KFHibernate/target/surefire/surefirebooter12078150482024724286.jar /Users/VinYarD/Documents/ISTIC/M1/S2/IPR/kilofees/KFHibernate/target/surefire 2018-09-18T10-48-34_821-jvmRun1 surefire7820786338979249890tmp surefire_04299468360565973475tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/VinYarD/Documents/ISTIC/M1/S2/IPR/kilofees/KFHibernate/target/test-classes:/Users/VinYarD/Documents/ISTIC/M1/S2/IPR/kilofees/KFHibernate/target/classes:/Users/VinYarD/.m2/repository/org/hibernate/hibernate-entitymanager/5.3.6.Final/hibernate-entitymanager-5.3.6.Final.jar:/Users/VinYarD/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/VinYarD/.m2/repository/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final.jar:/Users/VinYarD/.m2/repository/org/javassist/javassist/3.23.1-GA/javassist-3.23.1-GA.jar:/Users/VinYarD/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/VinYarD/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/VinYarD/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Users/VinYarD/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/VinYarD/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/VinYarD/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.4.Final/hibernate-commons-annotations-5.0.4.Final.jar:/Users/VinYarD/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/VinYarD/.m2/repository/net/bytebuddy/byte-buddy/1.8.17/byte-buddy-1.8.17.jar:/Users/VinYarD/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/VinYarD/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/VinYarD/.m2/repository/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar:/Users/VinYarD/.m2/repository/com/google/code/geocoder-java/geocoder-java/0.15/geocoder-java-0.15.jar:/Users/VinYarD/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/VinYarD/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/Users/VinYarD/.m2/repository/commons-codec/commons-codec/1.2/commons-codec-1.2.jar:/Users/VinYarD/.m2/repository/com/google/code/gson/gson/1.7.2/gson-1.7.2.jar:/Users/VinYarD/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/Users/VinYarD/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/Users/VinYarD/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.3/junit-jupiter-api-5.0.3.jar:/Users/VinYarD/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/VinYarD/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/VinYarD/.m2/repository/org/junit/platform/junit-platform-commons/1.0.3/junit-platform-commons-1.0.3.jar:/Users/VinYarD/.m2/repository/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar:/Users/VinYarD/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/VinYarD/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/VinYarD/Documents/ISTIC/M1/S2/IPR/kilofees/KFHibernate/target/surefire/surefirebooter100758012503640258.jar"/>
+    <property name="surefire.real.class.path" value="/Users/VinYarD/Documents/ISTIC/M1/S2/IPR/kilofees/KFHibernate/target/surefire/surefirebooter12078150482024724286.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="10+46"/>
@@ -63,5 +63,5 @@
     <property name="java.class.version" value="54.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="persist" classname="pro.vinyard.project.entity.peristence.CPCarTest" time="2.932"/>
+  <testcase name="persist" classname="pro.vinyard.project.entity.peristence.CPCarTest" time="2.968"/>
 </testsuite>
