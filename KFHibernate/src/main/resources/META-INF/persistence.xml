@@ -44,9 +44,9 @@
             <property name="hibernate.archive.autodetection" value="class, hbm"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
-            <!-- <property name="hibernate.connection.password" value="yourpass"/>-->
-            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost/tpjpa"/>
-            <property name="hibernate.connection.username" value="VinYarD"/>
+            <property name="hibernate.connection.password" value="connarde"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost/taa"/>
+            <property name="hibernate.connection.username" value="postgres"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
             <property name="hibernate.c3p0.min_size" value="5"/>
             <property name="hibernate.c3p0.max_size" value="20"/>
