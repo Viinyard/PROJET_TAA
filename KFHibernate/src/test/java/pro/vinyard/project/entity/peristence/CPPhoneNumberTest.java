@@ -2,6 +2,7 @@ package pro.vinyard.project.entity.peristence;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -34,6 +35,7 @@ public class CPPhoneNumberTest {
 		assertFalse(manager.isOpen());
 	}
 	
+	@Test
 	public void persist() {
 		CPPhoneNumber newPhoneNumber = new CPPhoneNumber();
 		EntityTransaction tx = manager.getTransaction();
