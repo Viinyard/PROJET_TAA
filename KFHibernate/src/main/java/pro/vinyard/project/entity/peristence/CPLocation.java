@@ -12,7 +12,7 @@ public class CPLocation {
 	
 	@Id
 	@GeneratedValue
-	private String id;
+	private long id;
 	
 	private double lat;
 	
@@ -48,11 +48,11 @@ public class CPLocation {
 		return this.lat + "," + this.lng;
 	}
 	
-	public String getId() {
+	public long getId() {
 		return id;
 	}
 	
-	public void setId(String id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 }
