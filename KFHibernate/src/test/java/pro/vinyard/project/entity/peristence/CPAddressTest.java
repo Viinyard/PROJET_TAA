@@ -59,14 +59,15 @@ public class CPAddressTest {
 			for(CPAddress cpAddress : listAddress) {
 				assertNotNull("Address is null", cpAddress);
 				if(cpAddress != null) {
-					assertNotNull(cpAddress.getCity());
-					assertNotNull(cpAddress.getCountry());
-					assertNotNull(cpAddress.getFormatted_address());
-					assertNotNull(cpAddress.getId());
-					assertNotNull(cpAddress.getLabel());
-					assertNotNull(cpAddress.getLocation());
+					assertNotNull("Address City is null", cpAddress.getCity());
+					assertNotNull("Address country is null", cpAddress.getCountry());
+					assertNotNull("Address Formatted_Address is null", cpAddress.getFormatted_address());
+					assertNotNull("Address Id is null", cpAddress.getId());
+					assertNotNull("Address Location is null", cpAddress.getLocation());
 					if(cpAddress.getLocation() != null) {
-					
+						assertNotNull("Location ID is null", cpAddress.getLocation().getId());
+						assertNotNull("Location Lat is null", cpAddress.getLocation().getLat());
+						assertNotNull("Location Lng is null", cpAddress.getLocation().getLng());
 					}
 				}
 			}
