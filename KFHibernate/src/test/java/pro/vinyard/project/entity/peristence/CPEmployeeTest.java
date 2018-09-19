@@ -222,4 +222,57 @@ public class CPEmployeeTest {
 		
 		assertNotNull("Address can't find by id : " + newAddress.getId(), cpAddress);
 	}
+	
+	@Test
+	public void deleteEnterprise() {
+		CPEmployee newEmployee = new CPEmployee();
+		CPEnterprise newEnterprise = new CPEnterprise();
+		EntityTransaction tx = manager.getTransaction();
+		tx.begin();
+		try {
+			newEmployee.setFirstName("john");
+			newEmployee.setLastName("smith");
+			newEmployee.setGender("male");
+			newEmployee.setBirthDate(Calendar.getInstance().getTime());
+			
+			newEnterprise.setLabel("sopragemini");
+			manager.persist(newEnterprise);
+			
+			newEmployee.addEnterprise(newEnterprise);
+			manager.persist(newEmployee);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		tx.commit();
+		
+		CPEmployee cpEmployee = manager.find(CPEmployee.class, newEmployee.getId());
+		
+		assertNotNull("Employee cannot find by id : " + newEmployee.getId(), cpEmployee);
+		
+		assertEquals("Firstname not equal : " + newEmployee.getFirstName() + " == " + cpEmployee.getFirstName(), newEmployee.getFirstName(), cpEmployee.getFirstName());
+		
+		assertEquals("Lastname not equal : " + newEmployee.getLastName() + " == " + cpEmployee.getLastName(), newEmployee.getLastName(), cpEmployee.getLastName());
+		
+		assertEquals("Gender not equal : " + newEmployee.getGender() + " == " + cpEmployee.getGender(), newEmployee.getGender(), cpEmployee.getGender());
+		
+		assertEquals("Date not equal : " + newEmployee.getBirthDate() + " == " + cpEmployee.getBirthDate(), newEmployee.getBirthDate(), cpEmployee.getBirthDate());
+		
+		CPEnterprise cpAddress = manager.find(CPEnterprise.class, newEnterprise.getId());
+		
+		assertNotNull("Enterprise cannot find by id : " + newEnterprise.getId(), cpAddress);
+		
+		assertEquals("Enterprise not equal : " + newEnterprise.getLabel() + " == " + cpAddress.getLabel(), newEnterprise.getLabel(), cpAddress.getLabel());
+		
+		tx.begin();
+		try {
+			manager.remove(newEmployee);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		tx.commit();
+		
+		cpAddress = manager.find(CPEnterprise.class, newEnterprise.getId());
+		
+		assertNotNull("Enterprise can't find by id : " + newEnterprise.getId(), cpAddress);
+	}
 }
