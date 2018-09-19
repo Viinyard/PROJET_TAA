@@ -1,8 +1,0 @@
-
-©%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(‚ëô¡þÿÿÿÿ8íªÒÞÞ,
-Fsquid:S11482"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8íªÒÞÞ,
-jsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(‚ëô¡þÿÿÿÿ8íªÒÞÞ,
-Lsquid:S2140-")Use "java.util.Random.nextInt()" instead.(ÛßÆãýÿÿÿÿ8íªÒÞÞ,
-¤%squid:RedundantThrowsDeclarationCheck!"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(«¤ÜÕ8íªÒÞÞ,
-msquid:UselessImportCheck"=Remove this unused import 'org.junit.jupiter.api.BeforeEach'.(Ú’ èùÿÿÿÿ8íªÒÞÞ,
-esquid:S00112!"FDefine and throw a dedicated exception instead of using a generic one.(«¤ÜÕ8íªÒÞÞ,

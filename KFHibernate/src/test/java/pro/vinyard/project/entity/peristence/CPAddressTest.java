@@ -6,6 +6,7 @@ import com.google.maps.errors.ApiException;
 import com.google.maps.model.GeocodingResult;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import javax.persistence.EntityManager;

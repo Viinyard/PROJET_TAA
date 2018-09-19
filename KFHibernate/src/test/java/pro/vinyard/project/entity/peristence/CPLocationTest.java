@@ -2,6 +2,8 @@ package pro.vinyard.project.entity.peristence;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -32,6 +34,7 @@ public class CPLocationTest {
 		assertFalse(manager.isOpen());
 	}
 	
+	@Test
 	public void persist() {
 		CPLocation newLocation = new CPLocation();
 		EntityTransaction tx = manager.getTransaction();
