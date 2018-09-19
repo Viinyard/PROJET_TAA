@@ -1,6 +1,6 @@
 target/
 KFHibernate/target
-/KFHibernate/src/main/resources/META-INF/persistence.xml
+/KFHibernate/src/main/resources/META-INF/
 
 
 # User-specific stuff
