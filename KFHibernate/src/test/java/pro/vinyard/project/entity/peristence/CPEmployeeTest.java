@@ -257,11 +257,11 @@ public class CPEmployeeTest {
 		
 		assertEquals("Date not equal : " + newEmployee.getBirthDate() + " == " + cpEmployee.getBirthDate(), newEmployee.getBirthDate(), cpEmployee.getBirthDate());
 		
-		CPEnterprise cpAddress = manager.find(CPEnterprise.class, newEnterprise.getId());
+		CPEnterprise cpEnterprise = manager.find(CPEnterprise.class, newEnterprise.getId());
 		
-		assertNotNull("Enterprise cannot find by id : " + newEnterprise.getId(), cpAddress);
+		assertNotNull("Enterprise cannot find by id : " + newEnterprise.getId(), cpEnterprise);
 		
-		assertEquals("Enterprise not equal : " + newEnterprise.getLabel() + " == " + cpAddress.getLabel(), newEnterprise.getLabel(), cpAddress.getLabel());
+		assertEquals("Enterprise not equal : " + newEnterprise.getLabel() + " == " + cpEnterprise.getLabel(), newEnterprise.getLabel(), cpEnterprise.getLabel());
 		
 		tx.begin();
 		try {
@@ -271,8 +271,8 @@ public class CPEmployeeTest {
 		}
 		tx.commit();
 		
-		cpAddress = manager.find(CPEnterprise.class, newEnterprise.getId());
+		cpEnterprise = manager.find(CPEnterprise.class, newEnterprise.getId());
 		
-		assertNotNull("Enterprise can't find by id : " + newEnterprise.getId(), cpAddress);
+		assertNotNull("Enterprise can't find by id : " + newEnterprise.getId(), cpEnterprise);
 	}
 }
