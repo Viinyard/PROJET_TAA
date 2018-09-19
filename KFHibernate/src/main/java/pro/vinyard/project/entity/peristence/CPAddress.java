@@ -1,5 +1,9 @@
 package pro.vinyard.project.entity.peristence;
 
+import com.google.maps.model.AddressComponent;
+import com.google.maps.model.AddressComponentType;
+import com.google.maps.model.GeocodingResult;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +39,27 @@ public class CPAddress {
 	
 	public CPAddress() {
 		this.attachments = new ArrayList<>();
+	}
+	
+	public CPAddress(GeocodingResult result) {
+		this.place_id = result.placeId;
+		this.formatted_address = result.formattedAddress;
+		this.location = new CPLocation(result.geometry.location);
+		for(AddressComponent addrCpt : result.addressComponents) {
+			if(addrCpt.types[0].compareTo(AddressComponentType.STREET_NUMBER) == 0) {
+				this.streetNumber = addrCpt.longName;
+			} else if(addrCpt.types[0].equals(AddressComponentType.ROUTE)) {
+				this.street = addrCpt.longName;
+			} else if(addrCpt.types[0].equals(AddressComponentType.POSTAL_CODE)) {
+				this.zipCode = Integer.parseInt(addrCpt.longName);
+			} else if(addrCpt.types[0].equals(AddressComponentType.LOCALITY)) {
+				this.city = addrCpt.longName;
+			} else if(addrCpt.types[0].equals(AddressComponentType.COUNTRY)) {
+				this.country = addrCpt.longName;
+			} else if(addrCpt.types[0].equals(AddressComponentType.ADMINISTRATIVE_AREA_LEVEL_1)) {
+				this.state = addrCpt.longName;
+			}
+		}
 	}
 	
 	public CPAddress(long id, String label, String streetNumber, String street, int zipCode, String city,
