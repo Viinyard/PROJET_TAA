@@ -28,7 +28,7 @@ public class CPAddress {
 	private String country;
 	private String state;
 	
-	@OneToOne(cascade = CascadeType.REMOVE)
+	@OneToOne(cascade = CascadeType.ALL)
 	private CPLocation location;
 	private String url;
 	private String formatted_address;
