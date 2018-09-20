@@ -2,6 +2,7 @@ package pro.vinyard.project.entity.peristence;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -13,25 +14,27 @@ import static org.junit.Assert.*;
 public class CPLocationTest {
 	
 	private EntityManager manager;
+	private EntityManagerFactory emf;
 	
 	@Before
-	public void setUp() throws Exception {
-		EntityManagerFactory factory =
+	public void setUp() {
+		this.emf =
 				Persistence.createEntityManagerFactory("pgsql");
-		assertNotNull(factory);
-		
-		this.manager = factory.createEntityManager();
-		
+		assertNotNull(this.emf);
+		this.manager = this.emf.createEntityManager();
 		assertNotNull(this.manager);
 	}
 	
 	@After
-	public void tearDown() throws Exception {
+	public void tearDown() {
 		this.manager.close();
-		
 		assertFalse(manager.isOpen());
+		
+		this.emf.close();
+		assertFalse(this.emf.isOpen());
 	}
 	
+	@Test
 	public void persist() {
 		CPLocation newLocation = new CPLocation();
 		EntityTransaction tx = manager.getTransaction();
@@ -41,6 +44,7 @@ public class CPLocationTest {
 			newLocation.setLng(-1.638364);
 			manager.persist(newLocation);
 		} catch (Exception e) {
+			tx.rollback();
 			e.printStackTrace();
 		}
 		tx.commit();

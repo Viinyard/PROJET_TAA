@@ -16,24 +16,28 @@ import static org.junit.Assert.*;
 
 public class CPCarTest {
 	
+	private EntityManagerFactory emf;
 	private EntityManager manager;
 	
 	@Before
 	public void setUp() throws Exception {
-		EntityManagerFactory factory =
+		this.emf =
 				Persistence.createEntityManagerFactory("pgsql");
-		assertNotNull(factory);
 		
-		this.manager = factory.createEntityManager();
+		assertNotNull(this.emf);
+		
+		this.manager = this.emf.createEntityManager();
 		
 		assertNotNull(this.manager);
 	}
 	
 	@After
-	public void tearDown() throws Exception {
+	public void tearDown() {
 		this.manager.close();
-		
 		assertFalse(manager.isOpen());
+		
+		this.emf.close();
+		assertFalse(this.emf.isOpen());
 	}
 	
 	@Test
@@ -47,6 +51,7 @@ public class CPCarTest {
 			newCar.setRegistrationDate(Calendar.getInstance().getTime());
 			manager.persist(newCar);
 		} catch (Exception e) {
+			tx.rollback();
 			e.printStackTrace();
 		}
 		tx.commit();

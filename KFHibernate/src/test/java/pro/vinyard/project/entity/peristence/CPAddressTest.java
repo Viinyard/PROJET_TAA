@@ -20,29 +20,33 @@ import static org.junit.Assert.*;
 public class CPAddressTest {
 	
 	private final static String API_KEY = "AIzaSyBCV9qcodF69hmqiI4-k74Mw0WEqVVwJFs";
+	private EntityManagerFactory emf;
 	private EntityManager manager;
 	private GeoApiContext context;
 	
 	@Before
 	public void setUp() throws Exception {
-		EntityManagerFactory factory =
+		this.emf =
 				Persistence.createEntityManagerFactory("pgsql");
-		assertNotNull(factory);
+		assertNotNull(this.emf);
 		
 		this.context = new GeoApiContext.Builder()
 				.apiKey(API_KEY)
 				.build();
 		
-		this.manager = factory.createEntityManager();
+		this.manager = this.emf.createEntityManager();
 		
 		assertNotNull(this.manager);
 		
 	}
 	
 	@After
-	public void tearDown() throws Exception {
+	public void tearDown() {
 		this.manager.close();
 		assertFalse(manager.isOpen());
+		
+		this.emf.close();
+		assertFalse(this.emf.isOpen());
 		
 		this.context.shutdown();
 	}

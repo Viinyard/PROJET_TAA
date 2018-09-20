@@ -2,6 +2,7 @@ package pro.vinyard.project.entity.peristence;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -14,26 +15,30 @@ import static org.junit.Assert.*;
 
 public class CPPhoneNumberTest {
 	
+	private EntityManagerFactory emf;
 	private EntityManager manager;
 	
 	@Before
 	public void setUp() throws Exception {
-		EntityManagerFactory factory =
+		this.emf =
 				Persistence.createEntityManagerFactory("pgsql");
-		assertNotNull(factory);
+		assertNotNull(this.emf);
 		
-		this.manager = factory.createEntityManager();
+		this.manager = this.emf.createEntityManager();
 		
 		assertNotNull(this.manager);
 	}
 	
 	@After
-	public void tearDown() throws Exception {
+	public void tearDown() {
 		this.manager.close();
-		
 		assertFalse(manager.isOpen());
+		
+		this.emf.close();
+		assertFalse(this.emf.isOpen());
 	}
 	
+	@Test
 	public void persist() {
 		CPPhoneNumber newPhoneNumber = new CPPhoneNumber();
 		EntityTransaction tx = manager.getTransaction();
@@ -43,6 +48,7 @@ public class CPPhoneNumberTest {
 			newPhoneNumber.setPhoneType("bureau");
 			manager.persist(newPhoneNumber);
 		} catch (Exception e) {
+			tx.rollback();
 			e.printStackTrace();
 		}
 		tx.commit();
