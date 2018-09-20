@@ -2,6 +2,10 @@ package pro.vinyard.project.entity.peristence;
 
 import org.junit.After;
 import org.junit.Before;
+<<<<<<< HEAD
+=======
+import org.junit.Ignore;
+>>>>>>> 6b71d13fdd663794ce83a2a0c5d6716b4dde2c0f
 import org.junit.Test;
 
 import javax.persistence.EntityManager;

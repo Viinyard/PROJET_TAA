@@ -2,6 +2,8 @@ package pro.vinyard.project.entity.peristence;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 
 @Entity
@@ -14,7 +16,7 @@ public class CPEmployee {
 	private String firstName;
 	private String lastName;
 	private String gender;
-	private long birthDate;
+	private Date birthDate;
 	private String licenceNumber;
 	private long licenceDate;
 	private String mail;
@@ -31,7 +33,7 @@ public class CPEmployee {
 	@ManyToMany(cascade = CascadeType.DETACH)
 	private List<CPEnterprise> enterprises;
 	
-	public CPEmployee(long id, String firstName, String lastName, String gender, long birthDate, String licenceNumber,
+	public CPEmployee(long id, String firstName, String lastName, String gender, Date birthDate, String licenceNumber,
 										long licenceDate, String mail) {
 		super();
 		this.id = id;
@@ -50,6 +52,10 @@ public class CPEmployee {
 	}
 	
 	public CPEmployee() {
+		this.attachments = new LinkedList<>();
+		this.phoneNumbers = new LinkedList<>();
+		this.addresses = new LinkedList<>();
+		this.enterprises = new LinkedList<>();
 	}
 	
 	public void addAttachment(CPAttachment attachment) {
@@ -148,11 +154,11 @@ public class CPEmployee {
 		this.gender = gender;
 	}
 	
-	public long getBirthDate() {
+	public Date getBirthDate() {
 		return birthDate;
 	}
 	
-	public void setBirthDate(long birthDate) {
+	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
 	}
 	
