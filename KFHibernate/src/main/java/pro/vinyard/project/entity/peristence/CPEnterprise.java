@@ -28,21 +28,11 @@ public class CPEnterprise {
 	@ManyToMany(cascade = CascadeType.DETACH)
 	private List<CPEmployee> employees;
 	
-	public CPEnterprise(long id, String label, long creationDate, long taxYear, String siretNumber) {
-		super();
-		this.id = id;
-		this.label = label;
-		this.creationDate = creationDate;
-		this.taxYear = taxYear;
-		this.siretNumber = siretNumber;
-		
+	public CPEnterprise() {
 		this.attachments = new ArrayList<>();
 		this.addresses = new ArrayList<>();
 		this.phoneNumbers = new ArrayList<>();
 		this.employees = new ArrayList<>();
-	}
-	
-	public CPEnterprise() {
 	}
 	
 	public void addAttachment(CPAttachment attachment) {

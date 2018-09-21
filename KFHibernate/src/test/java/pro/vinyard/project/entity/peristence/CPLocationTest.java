@@ -2,10 +2,6 @@ package pro.vinyard.project.entity.peristence;
 
 import org.junit.After;
 import org.junit.Before;
-<<<<<<< HEAD
-=======
-import org.junit.Ignore;
->>>>>>> 6b71d13fdd663794ce83a2a0c5d6716b4dde2c0f
 import org.junit.Test;
 
 import javax.persistence.EntityManager;
@@ -62,5 +58,12 @@ public class CPLocationTest {
 		assertTrue("lng not equal : " + newLocation.getLng() + " == " + cpLocation.getLng(), newLocation.getLng() == cpLocation.getLng());
 		
 		assertTrue("id not equal : " + newLocation.getId() + " == " + cpLocation.getId(), newLocation.getId() == cpLocation.getId());
+	}
+	
+	@Test
+	public void withNullArgument() {
+		CPLocation newLocation = new CPLocation(null);
+		assertTrue( newLocation.getLat() == 0d);
+		assertTrue(newLocation.getLng() == 0d);
 	}
 }

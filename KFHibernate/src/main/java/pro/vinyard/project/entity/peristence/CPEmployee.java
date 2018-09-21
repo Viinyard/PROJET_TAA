@@ -3,7 +3,6 @@ package pro.vinyard.project.entity.peristence;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.LinkedList;
 import java.util.List;
 
 @Entity
@@ -18,7 +17,7 @@ public class CPEmployee {
 	private String gender;
 	private Date birthDate;
 	private String licenceNumber;
-	private long licenceDate;
+	private Date licenceDate;
 	private String mail;
 	
 	@OneToMany(cascade = CascadeType.REMOVE)
@@ -33,29 +32,11 @@ public class CPEmployee {
 	@ManyToMany(cascade = CascadeType.DETACH)
 	private List<CPEnterprise> enterprises;
 	
-	public CPEmployee(long id, String firstName, String lastName, String gender, Date birthDate, String licenceNumber,
-										long licenceDate, String mail) {
-		super();
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.gender = gender;
-		this.birthDate = birthDate;
-		this.licenceNumber = licenceNumber;
-		this.licenceDate = licenceDate;
-		this.mail = mail;
-		
-		this.attachments = new ArrayList<>();
-		this.addresses = new ArrayList<>();
-		this.phoneNumbers = new ArrayList<>();
-		this.enterprises = new ArrayList<>();
-	}
-	
 	public CPEmployee() {
-		this.attachments = new LinkedList<>();
-		this.phoneNumbers = new LinkedList<>();
-		this.addresses = new LinkedList<>();
-		this.enterprises = new LinkedList<>();
+		this.attachments = new ArrayList<>();
+		this.phoneNumbers = new ArrayList<>();
+		this.addresses = new ArrayList<>();
+		this.enterprises = new ArrayList<>();
 	}
 	
 	public void addAttachment(CPAttachment attachment) {
@@ -170,11 +151,11 @@ public class CPEmployee {
 		this.licenceNumber = licenceNumber;
 	}
 	
-	public long getLicenceDate() {
+	public Date getLicenceDate() {
 		return licenceDate;
 	}
 	
-	public void setLicenceDate(long licenceDate) {
+	public void setLicenceDate(Date licenceDate) {
 		this.licenceDate = licenceDate;
 	}
 	

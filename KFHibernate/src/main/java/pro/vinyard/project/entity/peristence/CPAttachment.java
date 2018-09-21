@@ -1,5 +1,8 @@
 package pro.vinyard.project.entity.peristence;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.imageio.ImageIO;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,6 +16,9 @@ import java.io.InputStream;
 @Entity
 public class CPAttachment {
 	
+	private static Logger logger = LoggerFactory.getLogger(CPAttachment.class);
+	
+	
 	@Id
 	@GeneratedValue
 	private long id;
@@ -24,21 +30,13 @@ public class CPAttachment {
 	@Transient
 	private BufferedImage image;
 	
-	public CPAttachment(long id, String type, byte[] byteArray) {
-		super();
-		this.id = id;
-		this.type = type;
-		this.byteArray = byteArray;
-	}
-	
 	public CPAttachment(String type, byte[] byteArray) {
-		super();
 		this.type = type;
 		this.byteArray = byteArray;
 	}
 	
 	public CPAttachment() {
-	
+		// default constructor
 	}
 	
 	public long getId() {
@@ -73,7 +71,7 @@ public class CPAttachment {
 		try {
 			this.image = ImageIO.read(in);
 		} catch (IOException e) {
-			e.printStackTrace();
+			logger.info("ImageIO read error", e);
 		}
 		
 		return this.image;

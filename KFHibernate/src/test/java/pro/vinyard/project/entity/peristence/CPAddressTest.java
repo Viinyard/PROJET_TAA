@@ -6,7 +6,6 @@ import com.google.maps.errors.ApiException;
 import com.google.maps.model.GeocodingResult;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import javax.persistence.EntityManager;
@@ -66,7 +65,7 @@ public class CPAddressTest {
 				if(cpAddress != null) {
 					assertNotNull("Address City is null", cpAddress.getCity());
 					assertNotNull("Address country is null", cpAddress.getCountry());
-					assertNotNull("Address Formatted_Address is null", cpAddress.getFormatted_address());
+					assertNotNull("Address Formatted_Address is null", cpAddress.getFormattedAddress());
 					assertNotNull("Address Id is null", cpAddress.getId());
 					assertNotNull("Address Location is null", cpAddress.getLocation());
 					if(cpAddress.getLocation() != null) {
@@ -74,6 +73,9 @@ public class CPAddressTest {
 						assertNotNull("Location Lat is null", cpAddress.getLocation().getLat());
 						assertNotNull("Location Lng is null", cpAddress.getLocation().getLng());
 					}
+					
+					assertNotNull("street is null", cpAddress.getStreet());
+					assertNotNull("placeId is null", cpAddress.getPlaceId());
 				}
 			}
 			

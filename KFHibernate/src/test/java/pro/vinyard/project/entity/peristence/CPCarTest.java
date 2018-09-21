@@ -49,6 +49,18 @@ public class CPCarTest {
 			newCar.setFiscalHorsepower((int) (Math.random() * 1000));
 			newCar.setModel("test");
 			newCar.setRegistrationDate(Calendar.getInstance().getTime());
+			
+			CPEmployee owner = new CPEmployee();
+			owner.setBirthDate(Calendar.getInstance().getTime());
+			owner.setFirstName("Owner");
+			owner.setLastName("Own");
+			owner.setLicenceDate(Calendar.getInstance().getTime());
+			
+			owner.setGender("M");
+			owner.setMail("mail@vinyard.pro");
+			owner.setLicenceNumber("licence_number");
+			manager.persist(owner);
+			newCar.setEmployee(owner);
 			manager.persist(newCar);
 		} catch (Exception e) {
 			tx.rollback();
@@ -67,5 +79,11 @@ public class CPCarTest {
 		assertTrue("Model not equal : " + newCar.getRegistrationDate() + " == " + cpCar.getRegistrationDate(), newCar.getRegistrationDate() == cpCar.getRegistrationDate());
 		
 		assertTrue("id not equal : " + newCar.getId() + " == " + cpCar.getId(), newCar.getId() == cpCar.getId());
+		
+		assertNotNull("employee owner is null", cpCar.getEmployee());
+		
+		if(cpCar.getEmployee() != null) {
+			assertTrue("wrong employee", "Owner".equals(cpCar.getEmployee().getFirstName()));
+		}
 	}
 }

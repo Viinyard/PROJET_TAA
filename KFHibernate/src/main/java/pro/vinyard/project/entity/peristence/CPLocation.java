@@ -26,6 +26,7 @@ public class CPLocation {
 	}
 	
 	public CPLocation() {
+		// default constructor
 	}
 	
 	public double getLat() {

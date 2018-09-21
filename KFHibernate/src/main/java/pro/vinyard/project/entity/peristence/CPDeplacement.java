@@ -26,6 +26,10 @@ public class CPDeplacement {
 	@OneToOne(cascade = CascadeType.DETACH)
 	private CPAddress addressArrivee;
 	
+	public CPDeplacement() {
+		// default constructor
+	}
+	
 	public long getID() {
 		return id;
 	}

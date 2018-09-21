@@ -31,8 +31,8 @@ public class CPAddress {
 	@OneToOne(cascade = CascadeType.ALL)
 	private CPLocation location;
 	private String url;
-	private String formatted_address;
-	private String place_id;
+	private String formattedAddress;
+	private String placeId;
 	
 	@OneToMany(cascade = CascadeType.PERSIST)
 	private List<CPAttachment> attachments;
@@ -42,43 +42,25 @@ public class CPAddress {
 	}
 	
 	public CPAddress(GeocodingResult result) {
-		this.place_id = result.placeId;
-		this.formatted_address = result.formattedAddress;
+		this.placeId = result.placeId;
+		this.formattedAddress = result.formattedAddress;
 		this.location = new CPLocation(result.geometry.location);
-		for(AddressComponent addrCpt : result.addressComponents) {
-			if(addrCpt.types[0].compareTo(AddressComponentType.STREET_NUMBER) == 0) {
+		for (AddressComponent addrCpt : result.addressComponents) {
+			if (addrCpt.types[0].compareTo(AddressComponentType.STREET_NUMBER) == 0) {
 				this.streetNumber = addrCpt.longName;
-			} else if(addrCpt.types[0].equals(AddressComponentType.ROUTE)) {
+			} else if (addrCpt.types[0].equals(AddressComponentType.ROUTE)) {
 				this.street = addrCpt.longName;
-			} else if(addrCpt.types[0].equals(AddressComponentType.POSTAL_CODE)) {
+			} else if (addrCpt.types[0].equals(AddressComponentType.POSTAL_CODE)) {
 				this.zipCode = Integer.parseInt(addrCpt.longName);
-			} else if(addrCpt.types[0].equals(AddressComponentType.LOCALITY)) {
+			} else if (addrCpt.types[0].equals(AddressComponentType.LOCALITY)) {
 				this.city = addrCpt.longName;
-			} else if(addrCpt.types[0].equals(AddressComponentType.COUNTRY)) {
+			} else if (addrCpt.types[0].equals(AddressComponentType.COUNTRY)) {
 				this.country = addrCpt.longName;
-			} else if(addrCpt.types[0].equals(AddressComponentType.ADMINISTRATIVE_AREA_LEVEL_1)) {
+			} else if (addrCpt.types[0].equals(AddressComponentType.ADMINISTRATIVE_AREA_LEVEL_1)) {
 				this.state = addrCpt.longName;
 			}
 		}
 	}
-	
-	public CPAddress(long id, String label, String streetNumber, String street, int zipCode, String city,
-									 String country, String state, CPLocation location, String place_id, String url, String formatted_address) {
-		this();
-		this.id = id;
-		this.label = label;
-		this.streetNumber = streetNumber;
-		this.street = street;
-		this.zipCode = zipCode;
-		this.city = city;
-		this.country = country;
-		this.state = state;
-		this.location = location;
-		this.place_id = place_id;
-		this.url = url;
-		this.formatted_address = formatted_address;
-	}
-	
 	
 	@Override
 	public String toString() {
@@ -195,19 +177,19 @@ public class CPAddress {
 		this.url = url;
 	}
 	
-	public String getFormatted_address() {
-		return formatted_address;
+	public String getFormattedAddress() {
+		return formattedAddress;
 	}
 	
-	public void setFormatted_address(String formatted_address) {
-		this.formatted_address = formatted_address;
+	public void setFormattedAddress(String formattedAddress) {
+		this.formattedAddress = formattedAddress;
 	}
 	
-	public String getPlace_id() {
-		return place_id;
+	public String getPlaceId() {
+		return placeId;
 	}
 	
-	public void setPlace_id(String place_id) {
-		this.place_id = place_id;
+	public void setPlaceId(String placeId) {
+		this.placeId = placeId;
 	}
 }

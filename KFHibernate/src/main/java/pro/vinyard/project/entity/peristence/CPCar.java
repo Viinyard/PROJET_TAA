@@ -18,15 +18,8 @@ public class CPCar {
 	@OneToOne(cascade = CascadeType.DETACH)
 	private CPEmployee employee;
 	
-	public CPCar() {}
-	
-	public CPCar(long id, String model, int fiscalHorsepower, Date registrationDate, CPEmployee employee) {
-		super();
-		this.id = id;
-		this.model = model;
-		this.fiscalHorsepower = fiscalHorsepower;
-		this.registrationDate = registrationDate;
-		this.employee = employee;
+	public CPCar() {
+		// default constructor
 	}
 	
 	public long getId() {

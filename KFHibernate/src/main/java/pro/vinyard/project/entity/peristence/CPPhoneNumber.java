@@ -15,14 +15,8 @@ public class CPPhoneNumber {
 	private String phoneNumber;
 	private String phoneType;
 	
-	public CPPhoneNumber(long id, String phoneNumber, String phoneType) {
-		super();
-		this.id = id;
-		this.phoneNumber = phoneNumber;
-		this.phoneType = phoneType;
-	}
-	
 	public CPPhoneNumber() {
+		// default constructor
 	}
 	
 	public long getId() {
