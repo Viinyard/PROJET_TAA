@@ -1,4 +1,4 @@
-package pro.vinyard.project.entity.peristence;
+package pro.vinyard.project.entity.persistence;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
