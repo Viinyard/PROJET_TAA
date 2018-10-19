@@ -2,6 +2,7 @@ package pro.vinyard.project.entity.peristence;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -12,8 +13,8 @@ public class CPEnterprise {
 	private long id;
 	
 	private String label;
-	private long creationDate;
-	private long taxYear;
+	private Date creationDate;
+	private int taxYear;
 	private String siretNumber;
 	
 	@OneToMany(cascade = CascadeType.REMOVE)
@@ -83,22 +84,6 @@ public class CPEnterprise {
 		return this.employees;
 	}
 	
-	public void addAttachments(List<CPAttachment> attachments) {
-		this.attachments.addAll(attachments);
-	}
-	
-	public void addAddresses(List<CPAddress> addresses) {
-		this.addresses.addAll(addresses);
-	}
-	
-	public void addPhoneNumbers(List<CPPhoneNumber> phoneNumbers) {
-		this.phoneNumbers.addAll(phoneNumbers);
-	}
-	
-	public void addEmployees(List<CPEmployee> employees) {
-		this.employees.addAll(employees);
-	}
-	
 	public long getId() {
 		return id;
 	}
@@ -115,19 +100,19 @@ public class CPEnterprise {
 		this.label = label;
 	}
 	
-	public long getCreationDate() {
+	public Date getCreationDate() {
 		return creationDate;
 	}
 	
-	public void setCreationDate(long creationDate) {
+	public void setCreationDate(Date creationDate) {
 		this.creationDate = creationDate;
 	}
 	
-	public long getTaxYear() {
+	public int getTaxYear() {
 		return taxYear;
 	}
 	
-	public void setTaxYear(long taxYear) {
+	public void setTaxYear(int taxYear) {
 		this.taxYear = taxYear;
 	}
 	

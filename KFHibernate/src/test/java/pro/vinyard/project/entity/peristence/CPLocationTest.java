@@ -1,5 +1,6 @@
 package pro.vinyard.project.entity.peristence;
 
+import com.google.maps.model.LatLng;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -65,5 +66,12 @@ public class CPLocationTest {
 		CPLocation newLocation = new CPLocation(null);
 		assertTrue( newLocation.getLat() == 0d);
 		assertTrue(newLocation.getLng() == 0d);
+	}
+	
+	@Test
+	public void withLatLng() {
+		CPLocation newLocation = new CPLocation(new LatLng(0, 0));
+		assertTrue(newLocation.getLng() == 0d);
+		assertTrue(newLocation.getLat() == 0d);
 	}
 }

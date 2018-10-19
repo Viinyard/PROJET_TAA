@@ -9,9 +9,6 @@ public class CPPhoneNumber {
 	@GeneratedValue
 	private long id;
 	
-	@ManyToOne(cascade = CascadeType.PERSIST)
-	private CPEmployee employee;
-	
 	private String phoneNumber;
 	private String phoneType;
 	
