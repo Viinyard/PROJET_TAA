@@ -25,7 +25,7 @@ public class CPAddressTest {
 	private GeoApiContext context;
 	
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() {
 		this.emf =
 				Persistence.createEntityManagerFactory("pgsql");
 		assertNotNull(this.emf);
@@ -62,28 +62,16 @@ public class CPAddressTest {
 		
 			for(CPAddress cpAddress : listAddress) {
 				assertNotNull("Address is null", cpAddress);
-				if(cpAddress != null) {
-					assertNotNull("Address City is null", cpAddress.getCity());
-					assertNotNull("Address country is null", cpAddress.getCountry());
-					assertNotNull("Address Formatted_Address is null", cpAddress.getFormattedAddress());
-					assertNotNull("Address Id is null", cpAddress.getId());
-					assertNotNull("Address Location is null", cpAddress.getLocation());
-					if(cpAddress.getLocation() != null) {
-						assertNotNull("Location ID is null", cpAddress.getLocation().getId());
-						assertNotNull("Location Lat is null", cpAddress.getLocation().getLat());
-						assertNotNull("Location Lng is null", cpAddress.getLocation().getLng());
-					}
-					
-					assertNotNull("street is null", cpAddress.getStreet());
-					assertNotNull("placeId is null", cpAddress.getPlaceId());
-				}
+				assertNotNull("Address City is null", cpAddress.getCity());
+				assertNotNull("Address country is null", cpAddress.getCountry());
+				assertNotNull("Address Formatted_Address is null", cpAddress.getFormattedAddress());
+				assertNotNull("Address Location is null", cpAddress.getLocation());
+				
+				assertNotNull("street is null", cpAddress.getStreet());
+				assertNotNull("placeId is null", cpAddress.getPlaceId());
 			}
 			
-		} catch (ApiException e) {
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
+		} catch (ApiException | InterruptedException | IOException e) {
 			e.printStackTrace();
 		}
 	}

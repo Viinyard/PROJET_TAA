@@ -65,9 +65,9 @@ public class CPEnterpriseTest {
 			
 			assertEquals("Label not equal : " + newEnterprise.getLabel() + " == " + cpEnterprise.getLabel(), newEnterprise.getLabel(), newEnterprise.getLabel());
 			
-			assertTrue("Siret Number not equal : " + newEnterprise.getSiretNumber() + " == " + cpEnterprise.getSiretNumber(), newEnterprise.getSiretNumber().equals(cpEnterprise.getSiretNumber()));
+			assertEquals("Siret Number not equal : " + newEnterprise.getSiretNumber() + " == " + cpEnterprise.getSiretNumber(), newEnterprise.getSiretNumber(), cpEnterprise.getSiretNumber());
 			
-			assertTrue("Creation date not equal : " + newEnterprise.getCreationDate() + " == " + cpEnterprise.getCreationDate(), newEnterprise.getCreationDate().compareTo(cpEnterprise.getCreationDate()) == 0);
+			assertEquals("Creation date not equal : " + newEnterprise.getCreationDate() + " == " + cpEnterprise.getCreationDate(), 0, newEnterprise.getCreationDate().compareTo(cpEnterprise.getCreationDate()));
 			
 			assertEquals("TaxYear not equal : " + newEnterprise.getTaxYear() + " == " + cpEnterprise.getTaxYear(), newEnterprise.getTaxYear(), cpEnterprise.getTaxYear());
 		}
@@ -101,13 +101,13 @@ public class CPEnterpriseTest {
 			
 			assertEquals("Label not equal : " + newEnterprise.getLabel() + " == " + cpEnterprise.getLabel(), newEnterprise.getLabel(), newEnterprise.getLabel());
 			
-			assertTrue("Siret Number not equal : " + newEnterprise.getSiretNumber() + " == " + cpEnterprise.getSiretNumber(), newEnterprise.getSiretNumber().equals(cpEnterprise.getSiretNumber()));
+			assertEquals("Siret Number not equal : " + newEnterprise.getSiretNumber() + " == " + cpEnterprise.getSiretNumber(), newEnterprise.getSiretNumber(), cpEnterprise.getSiretNumber());
 			
-			assertTrue("Creation date not equal : " + newEnterprise.getCreationDate() + " == " + cpEnterprise.getCreationDate(), newEnterprise.getCreationDate().compareTo(cpEnterprise.getCreationDate()) == 0);
+			assertEquals("Creation date not equal : " + newEnterprise.getCreationDate() + " == " + cpEnterprise.getCreationDate(), 0, newEnterprise.getCreationDate().compareTo(cpEnterprise.getCreationDate()));
 			
 			assertEquals("TaxYear not equal : " + newEnterprise.getTaxYear() + " == " + cpEnterprise.getTaxYear(), newEnterprise.getTaxYear(), cpEnterprise.getTaxYear());
 			
-			assertTrue("ListAttachment size", cpEnterprise.getAttachments().size() == 1);
+			assertEquals("ListAttachment size", 1, cpEnterprise.getAttachments().size());
 			
 			CPAttachment cpAttachment = manager.find(CPAttachment.class, cpEnterprise.getAttachments().get(0).getId());
 			
@@ -131,7 +131,7 @@ public class CPEnterpriseTest {
 			
 			cpAttachment = manager.find(CPAttachment.class, newAttachment.getId());
 			
-			//assertNull("Attachment can find by id : " + newAttachment.getId(), newAttachment.getId());
+			assertNull("Attachment can find by id : " + newAttachment.getId(), cpAttachment);
 		}
 		
 		@Test
@@ -163,13 +163,13 @@ public class CPEnterpriseTest {
 			
 			assertEquals("Label not equal : " + newEnterprise.getLabel() + " == " + cpEnterprise.getLabel(), newEnterprise.getLabel(), newEnterprise.getLabel());
 			
-			assertTrue("Siret Number not equal : " + newEnterprise.getSiretNumber() + " == " + cpEnterprise.getSiretNumber(), newEnterprise.getSiretNumber().equals(cpEnterprise.getSiretNumber()));
+			assertEquals("Siret Number not equal : " + newEnterprise.getSiretNumber() + " == " + cpEnterprise.getSiretNumber(), newEnterprise.getSiretNumber(), cpEnterprise.getSiretNumber());
 			
-			assertTrue("Creation date not equal : " + newEnterprise.getCreationDate() + " == " + cpEnterprise.getCreationDate(), newEnterprise.getCreationDate().compareTo(cpEnterprise.getCreationDate()) == 0);
+			assertEquals("Creation date not equal : " + newEnterprise.getCreationDate() + " == " + cpEnterprise.getCreationDate(), 0, newEnterprise.getCreationDate().compareTo(cpEnterprise.getCreationDate()));
 			
 			assertEquals("TaxYear not equal : " + newEnterprise.getTaxYear() + " == " + cpEnterprise.getTaxYear(), newEnterprise.getTaxYear(), cpEnterprise.getTaxYear());
 			
-			assertTrue("Phone number list size", cpEnterprise.getPhoneNumbers().size() == 1);
+			assertEquals("Phone number list size", 1, cpEnterprise.getPhoneNumbers().size());
 			
 			CPPhoneNumber cpPhoneNumber = manager.find(CPPhoneNumber.class, newEnterprise.getPhoneNumbers().get(0).getId());
 			
@@ -222,7 +222,7 @@ public class CPEnterpriseTest {
 			
 			assertNotNull("Enterprise cannot find by id : " + newEnterprise.getId(), cpEnterprise);
 			
-			assertTrue("AddressList size", cpEnterprise.getAddresses().size() == 1);
+			assertEquals("AddressList size", 1, cpEnterprise.getAddresses().size());
 			
 			CPAddress cpAddress = manager.find(CPAddress.class, cpEnterprise.getAddresses().get(0).getId());
 			
@@ -278,9 +278,9 @@ public class CPEnterpriseTest {
 			
 			CPEnterprise cpEnterprise = manager.find(CPEnterprise.class, newEnterprise.getId());
 			
-			assertNotNull("Enterprise cannot find by id : " + cpEnterprise.getId());
+			assertNotNull("Enterprise cannot find by id : " + newEnterprise.getId(), cpEnterprise);
 			
-			assertTrue("EmployeeList size", cpEnterprise.getEmployees().size() == 1);
+			assertEquals("EmployeeList size", 1, cpEnterprise.getEmployees().size());
 			
 			CPEmployee cpEmployee = manager.find(CPEmployee.class, cpEnterprise.getEmployees().get(0).getId());
 			
