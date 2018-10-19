@@ -1,4 +1,4 @@
-package pro.vinyard.project.entity.peristence;
+package pro.vinyard.project.entity.persistence;
 
 /**
  * Hello world!

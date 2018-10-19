@@ -1,4 +1,4 @@
-package pro.vinyard.project.entity.peristence;
+package pro.vinyard.project.entity.persistence;
 
 import com.google.maps.model.LatLng;
 import org.junit.After;

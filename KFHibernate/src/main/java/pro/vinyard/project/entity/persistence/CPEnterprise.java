@@ -1,4 +1,4 @@
-package pro.vinyard.project.entity.peristence;
+package pro.vinyard.project.entity.persistence;
 
 import javax.persistence.*;
 import java.util.ArrayList;
