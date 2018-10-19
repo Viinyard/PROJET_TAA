@@ -1,14 +1,11 @@
-target
+target/
 KFHibernate/target
 /KFHibernate/src/main/resources/META-INF/
 
-.class
+
 # User-specific stuff
 .idea/
-KFHibernate/.idea
-
 *.iml
-
 
 # Logs
 logs
