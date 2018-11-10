@@ -17,7 +17,7 @@ public class CPPhoneNumberTest {
 	private EntityManager manager;
 	
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() {
 		this.emf =
 				Persistence.createEntityManagerFactory("pgsql");
 		assertNotNull(this.emf);
@@ -55,10 +55,10 @@ public class CPPhoneNumberTest {
 		
 		assertNotNull("Car cannot find by id : " + newPhoneNumber.getId(), cpPhoneNumber);
 		
-		assertTrue("phoneNumber not equal : " + newPhoneNumber.getPhoneNumber() + " == " + cpPhoneNumber.getPhoneNumber(), newPhoneNumber.getPhoneNumber() == cpPhoneNumber.getPhoneNumber());
+		assertSame("phoneNumber not equal : " + newPhoneNumber.getPhoneNumber() + " == " + cpPhoneNumber.getPhoneNumber(), newPhoneNumber.getPhoneNumber(), cpPhoneNumber.getPhoneNumber());
 		
-		assertTrue("phoneType not equal : " + newPhoneNumber.getPhoneType() + " == " + cpPhoneNumber.getPhoneType(), newPhoneNumber.getPhoneType() == cpPhoneNumber.getPhoneType());
+		assertSame("phoneType not equal : " + newPhoneNumber.getPhoneType() + " == " + cpPhoneNumber.getPhoneType(), newPhoneNumber.getPhoneType(), cpPhoneNumber.getPhoneType());
 		
-		assertTrue("id not equal : " + newPhoneNumber.getId() + " == " + cpPhoneNumber.getId(), newPhoneNumber.getId() == cpPhoneNumber.getId());
+		assertEquals("id not equal : " + newPhoneNumber.getId() + " == " + cpPhoneNumber.getId(), newPhoneNumber.getId(), cpPhoneNumber.getId());
 	}
 }

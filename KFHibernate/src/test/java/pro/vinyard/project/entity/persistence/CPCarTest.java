@@ -8,7 +8,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
-
 import java.util.Calendar;
 
 import static org.junit.Assert.*;
@@ -19,7 +18,7 @@ public class CPCarTest {
 	private EntityManager manager;
 	
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() {
 		this.emf =
 				Persistence.createEntityManagerFactory("pgsql");
 		
@@ -71,18 +70,18 @@ public class CPCarTest {
 		
 		assertNotNull("Car cannot find by id : " + newCar.getId(), cpCar);
 		
-		assertTrue("fiscalHorsePower not equal : " + newCar.getFiscalHorsepower() + " == " + cpCar.getFiscalHorsepower(), newCar.getFiscalHorsepower() == cpCar.getFiscalHorsepower());
+		assertEquals("fiscalHorsePower not equal : " + newCar.getFiscalHorsepower() + " == " + cpCar.getFiscalHorsepower(), newCar.getFiscalHorsepower(), cpCar.getFiscalHorsepower());
 		
-		assertTrue("Model not equal : " + newCar.getModel() + " == " + cpCar.getModel(), newCar.getModel() == cpCar.getModel());
+		assertSame("Model not equal : " + newCar.getModel() + " == " + cpCar.getModel(), newCar.getModel(), cpCar.getModel());
 		
-		assertTrue("Model not equal : " + newCar.getRegistrationDate() + " == " + cpCar.getRegistrationDate(), newCar.getRegistrationDate() == cpCar.getRegistrationDate());
+		assertSame("Model not equal : " + newCar.getRegistrationDate() + " == " + cpCar.getRegistrationDate(), newCar.getRegistrationDate(), cpCar.getRegistrationDate());
 		
-		assertTrue("id not equal : " + newCar.getId() + " == " + cpCar.getId(), newCar.getId() == cpCar.getId());
+		assertEquals("id not equal : " + newCar.getId() + " == " + cpCar.getId(), newCar.getId(), cpCar.getId());
 		
 		assertNotNull("employee owner is null", cpCar.getEmployee());
 		
 		if(cpCar.getEmployee() != null) {
-			assertTrue("wrong employee", "Owner".equals(cpCar.getEmployee().getFirstName()));
+			assertEquals("wrong employee", "Owner", cpCar.getEmployee().getFirstName());
 		}
 	}
 }

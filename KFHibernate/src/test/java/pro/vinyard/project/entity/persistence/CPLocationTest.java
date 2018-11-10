@@ -54,24 +54,24 @@ public class CPLocationTest {
 		
 		assertNotNull("Car cannot find by id : " + newLocation.getId(), cpLocation);
 		
-		assertTrue("lat not equal : " + newLocation.getLat() + " == " + cpLocation.getLat(), newLocation.getLat() == cpLocation.getLat());
+		assertEquals("lat not equal : " + newLocation.getLat() + " == " + cpLocation.getLat(), newLocation.getLat(), cpLocation.getLat(), 0.0);
 		
-		assertTrue("lng not equal : " + newLocation.getLng() + " == " + cpLocation.getLng(), newLocation.getLng() == cpLocation.getLng());
+		assertEquals("lng not equal : " + newLocation.getLng() + " == " + cpLocation.getLng(), newLocation.getLng(), cpLocation.getLng(), 0.0);
 		
-		assertTrue("id not equal : " + newLocation.getId() + " == " + cpLocation.getId(), newLocation.getId() == cpLocation.getId());
+		assertEquals("id not equal : " + newLocation.getId() + " == " + cpLocation.getId(), newLocation.getId(), cpLocation.getId());
 	}
 	
 	@Test
 	public void withNullArgument() {
 		CPLocation newLocation = new CPLocation(null);
-		assertTrue( newLocation.getLat() == 0d);
-		assertTrue(newLocation.getLng() == 0d);
+		assertEquals(0d, newLocation.getLat(), 0.0);
+		assertEquals(0d, newLocation.getLng(), 0.0);
 	}
 	
 	@Test
 	public void withLatLng() {
 		CPLocation newLocation = new CPLocation(new LatLng(0, 0));
-		assertTrue(newLocation.getLng() == 0d);
-		assertTrue(newLocation.getLat() == 0d);
+		assertEquals(0d, newLocation.getLng(), 0.0);
+		assertEquals(0d, newLocation.getLat(), 0.0);
 	}
 }
