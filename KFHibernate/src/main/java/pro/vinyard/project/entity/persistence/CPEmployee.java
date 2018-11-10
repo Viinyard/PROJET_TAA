@@ -6,32 +6,57 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-@Table(name="Employee")
+@Table(name = "employee")
 public class CPEmployee {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private long id;
 	
+	@Column(name = "first_name")
 	private String firstName;
+	
+	@Column(name = "last_name")
 	private String lastName;
+	
+	@Column(name = "gender")
 	private String gender;
+	
+	@Column(name = "birth_date")
 	private Date birthDate;
+	
+	@Column(name = "licence_number")
 	private String licenceNumber;
+	
+	@Column(name = "licence_date")
 	private Date licenceDate;
+	
+	@Column(name = "mail")
 	private String mail;
 	
 	@OneToMany(cascade = CascadeType.REMOVE)
+	@JoinColumn(name = "employee_id")
 	private List<CPAttachment> attachments;
 	
 	@OneToMany(cascade = CascadeType.REMOVE)
+	@JoinColumn(name = "employee_id")
 	private List<CPPhoneNumber> phoneNumbers;
 	
 	@OneToMany(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "employee_id")
 	private List<CPAddress> addresses;
 	
 	@ManyToMany(cascade = CascadeType.DETACH)
+	@JoinTable(name = "employee_enterprise",
+			joinColumns = @JoinColumn(name = "employee_id"),
+			inverseJoinColumns = @JoinColumn(name = "enterprise_id")
+	)
 	private List<CPEnterprise> enterprises;
+	
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinColumn(name = "employee_id")
+	private List<CPCar> cars;
 	
 	public CPEmployee() {
 		this.attachments = new ArrayList<>();
@@ -166,5 +191,13 @@ public class CPEmployee {
 	
 	public void setMail(String mail) {
 		this.mail = mail;
+	}
+	
+	public List<CPCar> getCars() {
+		return cars;
+	}
+	
+	public void setCars(List<CPCar> cars) {
+		this.cars = cars;
 	}
 }

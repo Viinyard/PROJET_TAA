@@ -1,22 +1,32 @@
 package pro.vinyard.project.rest.data;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "Car")
+@Table(name = "car")
 public class CPCar {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private long id;
 	
+	@Column(name = "model")
 	private String model;
+	
+	@Column(name = "fiscal_horsepower")
 	private int fiscalHorsepower;
+	
+	@Column(name = "registration_date")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
 	private Date registrationDate;
 	
 	@OneToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "employee_id")
 	private CPEmployee employee;
 	
 	public CPCar() {

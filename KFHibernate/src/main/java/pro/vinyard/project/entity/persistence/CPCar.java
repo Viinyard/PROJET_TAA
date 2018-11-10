@@ -5,18 +5,25 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name="Car")
+@Table(name = "car")
 public class CPCar {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private long id;
 	
+	@Column(name = "model")
 	private String model;
+	
+	@Column(name = "fiscal_horsepower")
 	private int fiscalHorsepower;
+	
+	@Column(name = "registration_date")
 	private Date registrationDate;
 	
-	@OneToOne(cascade = CascadeType.DETACH)
+	@ManyToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "employee_id")
 	private CPEmployee employee;
 	
 	public CPCar() {

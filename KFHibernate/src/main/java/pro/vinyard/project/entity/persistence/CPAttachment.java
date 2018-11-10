@@ -11,18 +11,20 @@ import java.io.IOException;
 import java.io.InputStream;
 
 @Entity
-@Table(name="Attachment")
+@Table(name = "attachment")
 public class CPAttachment {
 	
 	private static Logger logger = LoggerFactory.getLogger(CPAttachment.class);
 	
-	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private long id;
 	
+	@Column(name = "type")
 	private String type;
 	
+	@Column(name = "byte_array")
 	private byte[] byteArray;
 	
 	@Transient
