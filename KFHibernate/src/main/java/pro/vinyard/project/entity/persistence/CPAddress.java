@@ -14,6 +14,7 @@ import java.util.List;
  */
 
 @Entity
+@Table(name="Address")
 public class CPAddress {
 	
 	@Id
