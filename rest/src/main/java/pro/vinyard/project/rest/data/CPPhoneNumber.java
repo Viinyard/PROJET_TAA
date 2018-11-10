@@ -1,19 +1,20 @@
 package pro.vinyard.project.rest.data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "PhoneNumber")
+@Table(name = "phone_number")
 public class CPPhoneNumber {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private long id;
 	
+	@Column(name = "phone_number")
 	private String phoneNumber;
+	
+	@Column(name = "phone_type")
 	private String phoneType;
 	
 	public CPPhoneNumber() {

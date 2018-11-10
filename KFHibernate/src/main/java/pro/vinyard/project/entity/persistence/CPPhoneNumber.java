@@ -3,14 +3,18 @@ package pro.vinyard.project.entity.persistence;
 import javax.persistence.*;
 
 @Entity
-@Table(name="PhoneNumber")
+@Table(name = "phone_number")
 public class CPPhoneNumber {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private long id;
 	
+	@Column(name = "phone_number")
 	private String phoneNumber;
+	
+	@Column(name = "phone_type")
 	private String phoneType;
 	
 	public CPPhoneNumber() {

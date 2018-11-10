@@ -8,23 +8,28 @@ import javax.persistence.*;
  */
 
 @Entity
-@Table(name="Deplacement")
+@Table(name = "deplacement")
 public class CPDeplacement {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private long id;
 	
 	@OneToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "car_id")
 	private CPCar car;
 	
 	@OneToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "employee_id")
 	private CPEmployee employee;
 	
 	@OneToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "address_depart_id")
 	private CPAddress addressDepart;
 	
 	@OneToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "address_arrivee_id")
 	private CPAddress addressArrivee;
 	
 	public CPDeplacement() {

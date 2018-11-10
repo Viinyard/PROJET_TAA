@@ -3,21 +3,21 @@ package pro.vinyard.project.entity.persistence;
 
 import com.google.maps.model.LatLng;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name="Location")
+@Table(name = "location")
 public class CPLocation {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private long id;
 	
+	@Column(name = "lat")
 	private double lat;
 	
+	@Column(name = "lng")
 	private double lng;
 	
 	public CPLocation(LatLng latLng) {

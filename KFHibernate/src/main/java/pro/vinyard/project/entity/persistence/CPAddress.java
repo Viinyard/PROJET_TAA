@@ -14,28 +14,50 @@ import java.util.List;
  */
 
 @Entity
-@Table(name="Address")
+@Table(name = "address")
 public class CPAddress {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private long id;
 	
+	@Column(name = "label")
 	private String label;
+	
+	@Column(name = "street_number")
 	private String streetNumber;
+	
+	@Column(name = "street")
 	private String street;
+	
+	@Column(name = "zip_code")
 	private int zipCode;
+	
+	@Column(name = "city")
 	private String city;
+	
+	@Column(name = "country")
 	private String country;
+	
+	@Column(name = "state")
 	private String state;
 	
 	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "location_id")
 	private CPLocation location;
+	
+	@Column(name = "url")
 	private String url;
+	
+	@Column(name = "formatted_address")
 	private String formattedAddress;
+	
+	@Column(name = "place_id")
 	private String placeId;
 	
 	@OneToMany(cascade = CascadeType.PERSIST)
+	@JoinColumn(name = "address_id")
 	private List<CPAttachment> attachments;
 	
 	public CPAddress() {

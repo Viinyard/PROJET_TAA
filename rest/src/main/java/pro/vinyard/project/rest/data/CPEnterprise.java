@@ -3,6 +3,7 @@ package pro.vinyard.project.rest.data;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.Null;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -14,30 +15,40 @@ import java.util.List;
 
 
 @Entity
-@Table(name = "Enterprise")
+@Table(name = "enterprise")
 public class CPEnterprise {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private long id;
 	
+	@Column(name = "label")
 	private String label;
 	
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+	@Column(name = "creation_date")
 	private Date creationDate;
 	
+	@Column(name = "tax_year")
 	private int taxYear;
+	
+	@Column(name = "siret_number")
 	private String siretNumber;
 	
 	@OneToMany(cascade = CascadeType.REMOVE)
+	@JoinColumn(name = "enterprise_id")
 	private List<CPAttachment> attachments;
 	
 	@OneToMany(cascade = CascadeType.REMOVE)
+	@JoinColumn(name = "enterprise_id")
 	private List<CPAddress> addresses;
 	
 	@OneToMany(cascade = CascadeType.REMOVE)
+	@JoinColumn(name = "enterprise_id")
 	private List<CPPhoneNumber> phoneNumbers;
 	
-	@ManyToMany(cascade = CascadeType.DETACH)
+	@ManyToMany(mappedBy = "enterprises")
 	private List<CPEmployee> employees;
 	
 	public CPEnterprise() {
