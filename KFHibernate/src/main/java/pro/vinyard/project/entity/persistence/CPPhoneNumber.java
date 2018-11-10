@@ -3,6 +3,7 @@ package pro.vinyard.project.entity.persistence;
 import javax.persistence.*;
 
 @Entity
+@Table(name="PhoneNumber")
 public class CPPhoneNumber {
 	
 	@Id

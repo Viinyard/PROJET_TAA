@@ -6,8 +6,10 @@ import com.google.maps.model.LatLng;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="Location")
 public class CPLocation {
 	
 	@Id

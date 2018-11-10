@@ -8,6 +8,7 @@ import javax.persistence.*;
  */
 
 @Entity
+@Table(name="Deplacement")
 public class CPDeplacement {
 	
 	@Id

@@ -1,5 +1,7 @@
 package pro.vinyard.project.rest.data;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -20,7 +22,9 @@ public class CPEnterprise {
 	private long id;
 	
 	private String label;
+	
 	private Date creationDate;
+	
 	private int taxYear;
 	private String siretNumber;
 	

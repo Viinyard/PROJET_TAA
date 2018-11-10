@@ -5,6 +5,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Table(name="Car")
 public class CPCar {
 	
 	@Id
