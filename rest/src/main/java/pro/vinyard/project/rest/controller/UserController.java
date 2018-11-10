@@ -1,6 +1,6 @@
 package pro.vinyard.project.rest.controller;
 
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +15,8 @@ import java.util.Base64;
 public class UserController {
 	
 	@RequestMapping("/login")
-	public boolean login(@RequestBody SecurityProperties.User user) {
-		return user.getName().equals("admin") && user.getPassword().equals("admin");
+	public boolean login(@RequestBody User user) {
+		return user.getUsername().equals("admin") && user.getPassword().equals("admin");
 	}
 	
 	@RequestMapping("/user")
