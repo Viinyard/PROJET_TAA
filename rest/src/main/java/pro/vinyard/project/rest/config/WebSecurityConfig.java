@@ -23,16 +23,30 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+	    http
+			    .authorizeRequests()
+			    .antMatchers("/").permitAll()
+			    .anyRequest().authenticated()
+		    .and()
+			    .formLogin()
+			    .loginPage("/login")
+			    .permitAll()
+			.and()
+			    .logout()
+			    .permitAll();
+    }
+	/*
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests().antMatchers("/").permitAll()
 		        .antMatchers("/admin/**").hasRole("ADMIN").and().formLogin();
-        http.csrf().disable()
-                .authorizeRequests()
-                .antMatchers("/login").permitAll()
-                .anyRequest()
-                .authenticated()
-                .and()
-                .httpBasic();
+        http.authorizeRequests().antMatchers("/").permitAll()
+		        .antMatchers("/connection/**").hasRole("USER").and().formLogin();
+        http.authorizeRequests().antMatchers("/").permitAll()
+		        .antMatchers("/connection/**").hasRole("ADMIN").and().formLogin();
+        http.csrf().disable();
     }
+    */
     
     @Override
 	protected void configure(AuthenticationManagerBuilder auth)
