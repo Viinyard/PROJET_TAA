@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2f34a83d-a4fc-405b-8790-8e42cde51b5e" name="Default" comment="Commit de faible">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/data/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/data/User.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/KFHibernate/target/" />
+    <ignored path="$PROJECT_DIR$/rest/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-760199506">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="3" />
+          <entry key="gitignore" value="2" />
+          <entry key="java" value="79" />
+          <entry key="md" value="2" />
+          <entry key="properties" value="13" />
+          <entry key="xml" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="79" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="13" />
+          <entry key="XML" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gitignore" value="42" />
+          <entry key="java" value="703" />
+          <entry key="properties" value="4" />
+          <entry key="txt" value="31" />
+          <entry key="xml" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="703" />
+          <entry key="PLAIN_TEXT" value="73" />
+          <entry key="Properties" value="4" />
+          <entry key="XML" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="5" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.opened" value="9" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/WebSecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>CPAddresses</find>
+      <find>public</find>
+      <find>CP</find>
+      <find>ArrayList</find>
+      <find>Override</find>
+      <find>co</find>
+      <find>cobertura</find>
+      <find>chan</find>
+      <find>maven-compiler-plugin</find>
+      <find>report</find>
+      <find>sl</find>
+      <find>jdbc</find>
+      <find>log</find>
+      <find>sure</find>
+      <find>pmd</find>
+      <find>coco</find>
+      <find>Skipping JaCoCo execution due to missing execution data file.</find>
+      <find>prepare</find>
+      <find>jacoco</find>
+      <find>ja</find>
+      <find>spring</find>
+      <find>formatted_</find>
+      <find>sonar</find>
+      <find>delete</find>
+      <find>remove</find>
+      <find>surefi</find>
+      <find>GlobalAuthenticationConfigurerAdapter</find>
+      <find>@RequestMapping(</find>
+      <find>phoneNumber</find>
+      <find>login</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/IAddress.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/entity/peristence/CPEmployee.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/entity/peristence/CPLocation.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/peristence/entity/peristence/CPCarTest.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/google/map/research/AddressReseacher.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/google/map/research/AddressReseacherModel.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/peristence/Utils/TestUtils.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/peristence/LocalTestServerContext.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/test/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/peristence/CPPhoneNumberTest.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/CPCar.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/CPDeplacement.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/CPLocation.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/CPAttachment.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/CPEmployee.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/peristence/CPCarTest.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/peristence/CPAddressTest.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/peristence/CPDeplacementTest.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/peristence/CPLocationTest.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/CPAddress.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/resources/conf-dev/application.properties" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/resources/conf-prod/application.properties" />
+        <option value="$PROJECT_DIR$/KFHibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pro/vinyard/project/entity/peristence/App.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/CPPhoneNumber.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/CPEnterprise.java" />
+        <option value="$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/peristence/CPEnterpriseTest.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/ResourceWebConfig.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/AuthServerOAuth2Config.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/GlobalAuthenticationConfigurerAdapter.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/OAuth2ResourceServerConfig.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/ServerSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/controller/User.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/zvzz.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/czz.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/AuthServerConfig.java" />
+        <option value="$PROJECT_DIR$/rest/pom.xml" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/RestApplication.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/controller/gege.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/controller/CORSFilter.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/resources/conf-dev/application.properties" />
+        <option value="$PROJECT_DIR$/rest/src/main/resources/conf-prod/application.properties" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/data/User.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/vzz.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/CustomBasicAuthenticationEntryPoint.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/WebSecurityConfig.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="KFHibernate" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="KFHibernate" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="kilofees" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="kilofees" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="kilofees" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="27" />
+    <option name="width" value="1280" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Redundant constructsKotlin</id>
+          </State>
+          <State>
+            <id>Style issuesKotlin</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>DefaultFileTemplate</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="projet_taa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet_taa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet_taa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet_taa" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet_taa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet_taa" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet_taa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet_taa" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet_taa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet_taa" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet_taa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet_taa" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet_taa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet_taa" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet_taa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet_taa" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet_taa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet_taa" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet_taa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet_taa" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="conf-dev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet_taa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet_taa" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="conf-prod" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541962739276" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.25827205" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pro.vinyard.project.entity.peristence" />
+      <recent name="pro.vinyard.project.entity.peristence.entity.peristence" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pro.vinyard.project.entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/KFHibernate/src/main/resources/META-INF" />
+      <recent name="$PROJECT_DIR$/KFHibernate/src/main" />
+      <recent name="$PROJECT_DIR$/KFHibernate/src/test/resources/META-INF" />
+      <recent name="$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pro.vinyard.project.google.map.research" />
+      <recent name="pro.vinyard.project.entity" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.spring-boot">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPAddressTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KFHibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pro.vinyard.project.entity.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pro.vinyard.project.entity.persistence" />
+      <option name="MAIN_CLASS_NAME" value="pro.vinyard.project.entity.persistence.CPAddressTest" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPCarTest.persist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KFHibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pro.vinyard.project.entity.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pro.vinyard.project.entity.persistence" />
+      <option name="MAIN_CLASS_NAME" value="pro.vinyard.project.entity.persistence.CPCarTest" />
+      <option name="METHOD_NAME" value="persist" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPEnterpriseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KFHibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pro.vinyard.project.entity.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pro.vinyard.project.entity.persistence" />
+      <option name="MAIN_CLASS_NAME" value="pro.vinyard.project.entity.persistence.CPEnterpriseTest" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPLocationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KFHibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pro.vinyard.project.entity.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pro.vinyard.project.entity.persistence" />
+      <option name="MAIN_CLASS_NAME" value="pro.vinyard.project.entity.persistence.CPLocationTest" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPPhoneNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KFHibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pro.vinyard.project.entity.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pro.vinyard.project.entity.persistence" />
+      <option name="MAIN_CLASS_NAME" value="pro.vinyard.project.entity.persistence.CPPhoneNumberTest" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sonar" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="jacoco:prepare-agent" />
+                <option value="install" />
+                <option value="sonar:sonar" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="spring-boot" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/rest" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="RestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pro.vinyard.project.rest.RestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.sonar" />
+      <item itemvalue="Maven.spring-boot" />
+      <item itemvalue="Spring Boot.RestApplication" />
+      <item itemvalue="JUnit.CPCarTest.persist" />
+      <item itemvalue="JUnit.CPAddressTest" />
+      <item itemvalue="JUnit.CPEnterpriseTest" />
+      <item itemvalue="JUnit.CPPhoneNumberTest" />
+      <item itemvalue="JUnit.CPLocationTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CPLocationTest" />
+        <item itemvalue="JUnit.CPPhoneNumberTest" />
+        <item itemvalue="JUnit.CPEnterpriseTest" />
+        <item itemvalue="JUnit.CPAddressTest" />
+        <item itemvalue="JUnit.CPCarTest.persist" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f34a83d-a4fc-405b-8790-8e42cde51b5e" name="Default" comment="" />
+      <created>1536905727824</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536905727824</updated>
+      <workItem from="1536905734969" duration="6204000" />
+      <workItem from="1537194541326" duration="4454000" />
+      <workItem from="1537252529236" duration="4767000" />
+      <workItem from="1537259092661" duration="35971000" />
+      <workItem from="1537511298836" duration="79000" />
+      <workItem from="1537531742366" duration="929000" />
+      <workItem from="1539366808015" duration="3977000" />
+      <workItem from="1539529641804" duration="88000" />
+      <workItem from="1539778756103" duration="182000" />
+      <workItem from="1539892194401" duration="6231000" />
+      <workItem from="1541848949558" duration="7770000" />
+      <workItem from="1541858401099" duration="373000" />
+      <workItem from="1541858945078" duration="50000" />
+      <workItem from="1541863630538" duration="748000" />
+      <workItem from="1541873278119" duration="1104000" />
+      <workItem from="1541875683351" duration="4318000" />
+      <workItem from="1541886909741" duration="932000" />
+      <workItem from="1541888027511" duration="5559000" />
+      <workItem from="1541894210478" duration="14401000" />
+    </task>
+    <task id="LOCAL-00001" summary="Commit de faible">
+      <created>1539952662792</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539952662792</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="CPEnterpriseTest - 2018.11.10 at 13h 20m 45s.xml">
+      <configuration name="CPEnterpriseTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CPLocationTest - 2018.11.10 at 13h 21m 17s.xml">
+      <configuration name="CPLocationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CPPhoneNumberTest - 2018.11.10 at 13h 21m 25s.xml">
+      <configuration name="CPPhoneNumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CPEmployeeTest - 2018.11.10 at 13h 21m 39s.xml">
+      <configuration name="CPEmployeeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CPDeplacementTest - 2018.11.10 at 13h 21m 47s.xml">
+      <configuration name="CPDeplacementTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CPCarTest_persist - 2018.11.10 at 13h 21m 55s.xml">
+      <configuration name="CPCarTest.persist" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CPAddressTest - 2018.11.10 at 13h 22m 04s.xml">
+      <configuration name="CPAddressTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CPEnterpriseTest - 2018.11.10 at 13h 22m 37s.xml">
+      <configuration name="CPEnterpriseTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CPPhoneNumberTest - 2018.11.10 at 13h 23m 04s.xml">
+      <configuration name="CPPhoneNumberTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CPLocationTest - 2018.11.10 at 13h 23m 12s.xml">
+      <configuration name="CPLocationTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="99285000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1366" height="700" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.2780303" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Persistence" order="2" sideWeight="0.5024155" side_tool="true" weight="0.19628432" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Learn" order="8" />
+      <window_info id="Web" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.3017544" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Tool Output" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007576" side_tool="true" weight="0.38421053" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32905984" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.26666668" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32905984" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.2027972" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="14" />
+      <window_info anchor="bottom" id="Spring" order="15" weight="0.32905984" />
+      <window_info anchor="bottom" id="SonarLint" order="16" />
+      <window_info anchor="bottom" id="Tail" order="17" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32954547" />
+      <window_info anchor="right" id="Database" order="6" show_stripe_button="false" weight="0.32956383" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit de faible" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit de faible" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/controller/UserController.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/CPAddress.java" />
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/peristence/CPCarTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/vinyard/project/entity/peristence/App.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1999">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KFHibernate/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1436">
+          <caret line="34" column="73" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/CPEmployee.java" />
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/peristence/CPPhoneNumberTest.java" />
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/CPPhoneNumber.java" />
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/peristence/CPEnterpriseTest.java" />
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/peristence/CPEnterprise.java" />
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/peristence/CPAddressTest.java" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10942">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/persistence/CPCar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="19" lean-forward="true" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="77" lean-forward="true" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/persistence/CPEmployeeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/persistence/CPDeplacementTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/persistence/CPCarTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/persistence/CPAddressTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="54" column="42" lean-forward="true" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.1.RELEASE/spring-security-config-5.1.1.RELEASE.jar!/org/springframework/security/config/annotation/authentication/configuration/GlobalAuthenticationConfigurerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/persistence/CPLocationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/persistence/CPEnterpriseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2775">
+          <caret line="198" column="9" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/test/java/pro/vinyard/project/entity/persistence/CPPhoneNumberTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/GlobalAuthenticationConfigurerAdapter.java" />
+    <entry file="file://$PROJECT_DIR$/rest/src/test/java/pro/vinyard/project/rest/RestApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/ServerSecurityConfig.java" />
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/AuthServerOAuth2Config.java" />
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/OAuth2ResourceServerConfig.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.0.1.RELEASE/spring-security-oauth2-2.0.1.RELEASE.jar!/org/springframework/security/oauth2/config/annotation/web/configuration/ResourceServerConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/ResourceWebConfig.java" />
+    <entry file="file://$PROJECT_DIR$/KFHibernate/src/main/java/pro/vinyard/project/entity/persistence/CPAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/repository/AddressRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/repository/PhoneNumberRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.1.RELEASE/spring-security-core-5.1.1.RELEASE.jar!/org/springframework/security/core/userdetails/User.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/MyDataRestConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/resources/conf-dev/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/SecurityConfig.java" />
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/AuthServerConfig.java" />
+    <entry file="file://$PROJECT_DIR$/rest/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/repository/EnterpriseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/data/CPAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/RestApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/resources/conf-dev/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/resources/conf-prod/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-164">
+            <caret line="42" column="55" lean-forward="true" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/data/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/CustomBasicAuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="40" selection-start-column="40" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/controller/CORSFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/src/main/java/pro/vinyard/project/rest/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>JPA</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.25827205" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>kilofees</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.25827205" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>JDK_1.8.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.25827205" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="exec:java -Dexec.mainClass=&quot;fr.istic.taa.jaxrs.RestServer&quot;" />
+    <option value="clean jacoco:prepare-agent install jacoco:report" />
+    <option value="jacoco:prepare-agent jacoco:report" />
+    <option value="jacoco:report" />
+    <option value="jacoco:prepare-agent" />
+    <option value="jacoco:jacoco" />
+    <option value="-version" />
+    <option value="sonar:sonar" />
+  </component>
+</project>
