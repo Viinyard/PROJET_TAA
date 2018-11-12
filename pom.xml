@@ -55,6 +55,7 @@
         <kilofees.datasource.database>tpjpa</kilofees.datasource.database>
         <kilofees.datasource.host>localhost</kilofees.datasource.host>
         <kilofees.datasource.port>5432</kilofees.datasource.port>
+        <google.map.api.key>AIzaSyBCV9qcodF69hmqiI4-k74Mw0WEqVVwJFs</google.map.api.key>
     </properties>
 
     <reporting>
